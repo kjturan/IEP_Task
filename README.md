@@ -12,15 +12,10 @@ machine in order to convert from Word to PDF file formats; LibreOffice is an off
 comprises programs for word processing. The reason I chose to use LibreOffice is because unlike its competitors, LibreOffice 
 is free and open source, making it ideal for use at government hospitals. 
 
-Running the program: Running the program is simple and straightforward. The user will be prompted to provide a patient's 
-universally unique identification (UUID), which is a unique identifier for each patient. This also ensures the systems 
-security. Following, a short series of concise questions with single character inputs allows for quick access to the 
-necissary information. All prompts and inputs are done through terminal commands, making the API robust and easily 
-implementable to any existing system.
+Running the program: Running the program is simple and straightforward: simply running the file 'API.py' is enough. Following,
+the message '* Running on http://127.0.0.1:5002/ (Press CTRL+C to quit)' should display on the user's terminal. Clicking on 
+that link will redirect the user to my website UI, which can then be used to access my API. This syle makes the program robust and easily implementable to any existing system because of the duality of its nature. 
 
+Using the website: In order to ease usability, I chose to develop both a local-host and an API. Users are initially automatically directed to the website, where they can directly input a user's universally unique identification (UUID) and generate either Word or PDF documents through a simply user interface. Clicking either button will prompt an automatic download.
 
-
-
-
- 
-
+Using the API: Alternativly, to connect the API, a user can go to the 'http://127.0.0.1:5002/patient?uuid=' followed by the requested patients UUID to access the API directly. Following, the API should prompt an automatic download. 
