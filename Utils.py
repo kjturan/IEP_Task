@@ -4,21 +4,9 @@ import re
 import docx
 from datetime import datetime
 from dateutil.relativedelta import *
-from tkinter import *
-from flask import Flask
-from flask_restful import Api, Resource
 from fhir_parser.fhir import FHIR 
 
-def write_all_UUID():
-    file_path = "UUID.txt"
-    id_file = codecs.open(file_path, "w", "utf-8-sig")
-    patients = fhir.get_all_patients()
-    id_list = list()
-    for patient in patients:
-        id_list.append(patient.uuid)
-    id_string = '\n'.join(id_list)
-    id_file.write(id_string)
-    id_file.flush()
+fhir = FHIR()
 
 def get_comms(patient):
     comms = patient.communications
