@@ -17,7 +17,7 @@ To accomplish this goal, I designed a simple website UI, which can then be used 
 Core Dependencies: The package relies on the FHIR API. Patient data is retrieved over FHIR from a GOSH gateway. Furthermore, the package utilizes Ethan Wood's FHIR Parser and requires LibreOffice to be installed on the users machine in order to convert from Word to PDF file formats; LibreOffice is an office suite, much like Microsoft Office, that comprises programs for word processing. The reason I chose to use LibreOffice is because unlike its competitors, LibreOffice is free and open source, making it easily accesible.
 
 Running the program: Running the program is simple and straightforward: simply running the file 'API.py' is enough. Following,
-the message '* Running on http://127.0.0.1:5002/ (Press CTRL+C to quit)' should display on the user's terminal. Clicking 
-that link redirect sthe user to my website, which can then be used to access my API. This syle makes the program robust and easily implementable to any existing system because of the duality of its nature. 
+the message `* Running on http://127.0.0.1:5002/ (Press CTRL+C to quit)` should display on the user's terminal. Clicking 
+that link redirect sthe user to the localhost, which can then be used to access my API. This syle makes the program robust and easily implementable to any existing system because of the duality of its nature. 
 
-Using the API: Alternativly, to connect the API, a user can go to the 'http://127.0.0.1:5002/patient?uuid=' followed by the requested patients UUID to access the API directly. Following, the API should prompt an automatic download. 
+Using the API: Alternativly, to connect to the API directly, a user can go to the `http://127.0.0.1:5002/patient?uuid=` followed by the requested patients UUID to access the API directly. Following, the API should prompt an automatic download. 
